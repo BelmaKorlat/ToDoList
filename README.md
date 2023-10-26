@@ -33,5 +33,5 @@ Enhanced productivity and task management
 Contributions
 Contributions are welcome. Feel free to fork the repository and submit pull requests.
 
-##Contact Information
+## Contact Information
 For any inquiries or feedback, please contact me.
