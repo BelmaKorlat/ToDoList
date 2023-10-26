@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today List</title>
+    <link rel="stylesheet" href="style/styleToday.css">
+</head>
+
+<body>
+    <form class="back" action="/back" method="GET">
+        <button class="btnback">BACK</button>
+        <h2>TODAY LIST</h2>
+    </form>
+    <div class="today">
+        <h1 id="date">
+        </h1>
+        <table id="tablee">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TASK</th>
+                    <th>CHECK</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% data.forEach(element=> { %>
+                    <tr>
+                        <td>
+                            <%=element.todoId %>
+                        </td>
+                        <td>
+                            <%=element.todoTask %>
+                        </td>
+                        <td>
+                            <input type="checkbox" class="checkbox" />
+                        </td>
+                        <td>
+                            <form action="/delete" method="POST">
+                                <input type="hidden" name="todoId" value="<%=element.todoId%>">
+                                <input type="hidden" name="todoTask" value="<%=element.todoTask%>">
+                                <button class="btn" type="submit">DELETE</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+
+        <form action="/" method="POST" class="formsAdd" autocomplete="off">
+            <input type="text" name="todoId" class="inp" id="inpId" placeholder="Enter Id">
+            <input type="text" name="todoTask" class="inp" placeholder="Enter Task">
+            <button type="submit">ADD</button>
+        </form>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

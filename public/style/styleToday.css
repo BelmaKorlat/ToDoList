@@ -1,0 +1,171 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.back {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.btnback {
+    width: 20%;
+    border-radius: 80%;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.today {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 98vh;
+}
+
+h1 {
+    border-bottom: 2px solid #19A7CE;
+    border-radius: 4px;
+}
+
+table {
+    margin-top: 50px;
+    table-layout: fixed;
+    width: 60%;
+    border-collapse: collapse;
+    border: 3px solid #19A7CE;
+    text-align: center;
+}
+
+thead th {
+    width: 30%;
+    font-size: 1.5rem;
+}
+
+th,
+td {
+    padding: 20px;
+}
+
+thead {
+    background: url(/images/blue-texture.jpg);
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 1px #F6F1F1;
+}
+
+thead th {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.5));
+    border: 3px solid #19A7CE;
+    letter-spacing: 2px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #19A7CE;
+    font-size: 1.3rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #146C94;
+    background: linear-gradient(to bottom,
+            #146C94,
+            rgba(50, 48, 48, 0.5));
+    font-size: 1.3rem;
+}
+
+.btn {
+    width: 50%;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #146C94;
+}
+
+button {
+    border: none;
+    background: #146C94;
+    color: #F6F1F1;
+    letter-spacing: 4px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    padding: 5px;
+    width: 40%;
+}
+
+.formsAdd {
+    margin-top: 5px;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #19A7CE;
+}
+
+.inp {
+    width: 75%;
+    background-color: black;
+    color: #19A7CE;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+#inpId {
+    margin-right: 5px;
+    border-right: 1px solid #19A7CE;
+}
+
+@media only screen and (max-width: 1250px) {
+    thead th {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    table {
+        width: 80%;
+    }
+
+    .addTask {
+        width: 70%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    table {
+        width: 95%;
+    }
+
+    .addTask {
+        width: 95%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
