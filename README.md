@@ -33,5 +33,11 @@ Enhanced productivity and task management
 Contributions
 Contributions are welcome. Feel free to fork the repository and submit pull requests.
 
+## Screenshots
+![todo 1](https://github.com/BelmaKorlat/ToDoList/assets/137005711/3e7e2e20-3011-4616-9060-d76ee8456ea5)
+![todo 2](https://github.com/BelmaKorlat/ToDoList/assets/137005711/80565196-e33e-4a85-99a1-65c11104443e)
+![Projekt3](https://github.com/BelmaKorlat/ToDoList/assets/137005711/78da29cc-690f-4059-a433-b930604da89e)
+
+
 ## Contact Information
 For any inquiries or feedback, please contact me.
